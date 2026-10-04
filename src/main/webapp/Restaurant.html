@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Restaurants</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#ff6b35;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h2{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    margin:8px 0;
+    color:#666;
+}
+
+.rating{
+    color:green;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#ff6b35;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button:hover{
+    background:#e85a28;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Food Delivery App</h1>
+    <h2>Restaurants Near You</h2>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="images/meghana.jpg">
+        <div class="card-content">
+            <h2>Meghana Foods</h2>
+            <p><b>Cuisine :</b> Biryani, Chinese</p>
+            <p><b>Delivery Time :</b> 30 mins</p>
+            <p><b>Address :</b> Koramangala, Bangalore</p>
+            <p class="rating">★ 4.7</p>
+            <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/empire.jpg">
+        <div class="card-content">
+            <h2>Empire Restaurant</h2>
+            <p><b>Cuisine :</b> North Indian</p>
+            <p><b>Delivery Time :</b> 25 mins</p>
+            <p><b>Address :</b> Indiranagar, Bangalore</p>
+            <p class="rating">★ 4.5</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/kfc.jpg">
+        <div class="card-content">
+            <h2>KFC</h2>
+            <p><b>Cuisine :</b> Fast Food</p>
+            <p><b>Delivery Time :</b> 20 mins</p>
+            <p><b>Address :</b> MG Road, Bangalore</p>
+            <p class="rating">★ 4.3</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/pizzahut.jpg">
+        <div class="card-content">
+            <h2>Pizza Hut</h2>
+            <p><b>Cuisine :</b> Pizza</p>
+            <p><b>Delivery Time :</b> 30 mins</p>
+            <p><b>Address :</b> Jayanagar, Bangalore</p>
+            <p class="rating">★ 4.4</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/dominos.jpg">
+        <div class="card-content">
+            <h2>Domino's Pizza</h2>
+            <p><b>Cuisine :</b> Pizza</p>
+            <p><b>Delivery Time :</b> 25 mins</p>
+            <p><b>Address :</b> Whitefield, Bangalore</p>
+            <p class="rating">★ 4.6</p>
+            <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/udupi.jpg">
+        <div class="card-content">
+            <h2>Udupi Upahar</h2>
+            <p><b>Cuisine :</b> South Indian</p>
+            <p><b>Delivery Time :</b> 20 mins</p>
+            <p><b>Address :</b> Basavanagudi, Bangalore</p>
+            <p class="rating">★ 4.2</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+    
+     <div class="card">
+        <img src="images/burgerking.jpg">
+        <div class="card-content">
+            <h2>Burger King</h2>
+            <p><b>Cuisine :</b> Burgers</p>
+            <p><b>Delivery Time :</b> 22 mins</p>
+            <p><b>Address :</b>Electronic City, Bangalore</p>
+            <p class="rating">★ 4.4</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+    
+     <div class="card">
+        <img src="images/truffles.jpg">
+        <div class="card-content">
+            <h2>Truffles</h2>
+            <p><b>Cuisine :</b> Continental, Burgers</p>
+            <p><b>Delivery Time :</b> 35 mins</p>
+            <p><b>Address :</b>Koramangala, Bangalore</p>
+            <p class="rating">★ 4.7</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="images/barbequenation.jpg">
+        <div class="card-content">
+            <h2>Barbeque Nation</h2>
+            <p><b>Cuisine :</b>BBQ, North Indian</p>
+            <p><b>Delivery Time :</b> 40 mins</p>
+            <p><b>Address :</b>JP Nagar, Bangalore</p>
+            <p class="rating">★ 4.6</p>
+             <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+    
+     <div class="card">
+        <img src="images/a2b.jpg">
+        <div class="card-content">
+            <h2>A2B - Adyar Ananda Bhavan</h2>
+            <p><b>Cuisine :</b>South Indian, Sweets</p>
+            <p><b>Delivery Time :</b> 18 mins</p>
+            <p><b>Address :</b>Rajajinagar, Bangalore</p>
+            <p class="rating">★ 4.5</p>
+            <a href="menu.html">
+    			<button>View Menu</button>
+			</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
